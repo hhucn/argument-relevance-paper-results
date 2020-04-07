@@ -136,7 +136,7 @@ class OriginalPageRank:
         one: np.ndarray = np.ones((self.amount_nodes, self.amount_nodes))
         alphaA: np.ndarray = np.multiply(self.alpha, self.__create_transition_matrix_A()[0])
         alphaOne: np.ndarray = np.multiply((1 - self.alpha) / self.amount_nodes, one)
-        M: np.ndarray = np.add(alphaA, alphaOne)
+        M: np.ndarray = np.add(alphaOne, alphaA)
         v_n: np.ndarray = v_0
         for n in range(0, self.epochs):
             v_n = np.dot(M, v_n)
@@ -166,7 +166,8 @@ class OriginalPageRank:
         :return: None
         """
         page_rank: dict = self.__write_page_rank_to_nodes()
-        with open("./data/page_rank_alpha_{}_epochs_{}{}.json".format(self.alpha, self.epochs, suffix), "w") as file:
+        with open("./data/page_rank_alpha_{}_epochs_{}{}.json".format(round(self.alpha, 1), self.epochs, suffix),
+                  "w") as file:
             json.dump(page_rank, file)
 
 
