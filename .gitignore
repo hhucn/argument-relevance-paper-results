@@ -1,0 +1,10 @@
+.DS_Store
+.ipynb_checkpoints/
+.idea/
+/Similarity/similarity_utils/__pycache__/
+/Comparison/utils/__pycache__/
+/Comparison/sentiment/.data
+/Comparison/sentiment/.vector_cache
+*__pycache__/
+/Comparison/.data
+/Comparison/.vector_cache
