@@ -1,0 +1,1 @@
+PATH_GENERATED_EMBEDDINGS_DATA = "./embeddings/"

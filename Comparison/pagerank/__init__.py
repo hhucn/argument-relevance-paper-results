@@ -1,0 +1,1 @@
+PATH_GENERATED_PAGE_RANK_DATA =  "./data"

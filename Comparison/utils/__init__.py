@@ -1,0 +1,5 @@
+PATH_GROUND_TRUTH_LIST = "../../Webis-ArgRank-17-Dataset/ground-truth-list.csv"
+PATH_GROUND_TRUTH_JSON = "../../Graph-Construction/groundtruth.json"
+PATH_NODE_MAPPING_JSON = "../../Graph-Construction/node_mapping.json"
+PATH_ARGUMENT_LIST = "../../Webis-ArgRank-17-Dataset/argument-list.csv"
+PATH_ARGUMENT_UNIT_LIST = "../../Webis-ArgRank-17-Dataset/argument-unit-list.csv"
