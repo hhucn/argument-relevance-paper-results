@@ -355,4 +355,5 @@ class NeuralNetworkSentiment:
 
 
 if __name__ == '__main__':
+    # en_core_web_sm==2.1.0
     train_neural_network()
