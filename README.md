@@ -17,6 +17,8 @@ Make sure this will install `en_core_web_sm==2.1.0`.
 
 # Reproduce
 
+It is very important to follow the steps in the given order, since otherwise the results may differ due to different hardware setups.
+
 1. Run `Groundtruth-Graph.ipynb` to create the argumentation-graph
 2. Run `Remapping-Graph.ipynb` to give each node a unique ID in [0, N-1]
 3. Run `OriginalPageRank.py` to create all PageRank values for the graph given the alpha-values in [0, 1]
